@@ -7,7 +7,7 @@ function App() {
   
     <div class="flex items-center justify-between mt-6">
     <div class="pt-2">
-                <img src="./images/logo.svg" alt=""/>
+                <img src="./images/logo.svg" bg-black alt=""/>
             </div>
           
         <div class=" md:flex space-x-16 mt-2 font-bold">
@@ -112,44 +112,44 @@ function App() {
           </div>
           
           <div>
-            <img src="img/logo-white.svg" class="h-8" alt="" />
+            <img src="./images/logo-white.svg" class="h-8" alt="" />
           </div>
           
           <div class="flex justify-center space-x-4">
             
             <a href="#">
-              <img src="img/icon-facebook.svg" alt="" class="h-8" />
+              <img src="./images/icon-facebook.svg" alt="" class="h-8" />
             </a>
            
             <a href="#">
-              <img src="img/icon-youtube.svg" alt="" class="h-8" />
+              <img src="./images/icon-youtube.svg" alt="" class="h-8" />
             </a>
            
             <a href="#">
-              <img src="img/icon-twitter.svg" alt="" class="h-8" />
+              <img src="./images/icon-twitter.svg" alt="" class="h-8" />
             </a>
            
             <a href="#">
-              <img src="img/icon-pinterest.svg" alt="" class="h-8" />
+              <img src="./images/icon-pinterest.svg" alt="" class="h-8" />
             </a>
             
             <a href="#">
-              <img src="img/icon-instagram.svg" alt="" class="h-8" />
+              <img src="./images/icon-instagram.svg" alt="" class="h-8" />
             </a>
           </div>
         </div>
         
         <div class="flex justify-around space-x-32">
           <div class="flex flex-col space-y-3 text-white">
-            <a href="#" class="hover:text-brightRed">Home</a>
-            <a href="#" class="hover:text-brightRed">Pricing</a>
-            <a href="#" class="hover:text-brightRed">Products</a>
-            <a href="#" class="hover:text-brightRed">About</a>
+            <a href="#" class="hover:text-brightRed">HOME</a>
+            <a href="#" class="hover:text-brightRed">ABOUT</a>
+            <a href="#" class="hover:text-brightRed">CONTACT</a>
+            <a href="#" class="hover:text-brightRed">SERVICES</a>
           </div>
           <div class="flex flex-col space-y-3 text-white">
-            <a href="#" class="hover:text-brightRed">Careers</a>
-            <a href="#" class="hover:text-brightRed">Community</a>
-            <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+            <a href="#" class="hover:text-brightRed">MISSION</a>
+            <a href="#" class="hover:text-brightRed">GET STARTED</a>
+            <a href="#" class="hover:text-brightRed">CONNECT US</a>
           </div>
         </div>
 
@@ -160,7 +160,7 @@ function App() {
               <input
                 type="text"
                 class="flex-1 px-4 rounded-full focus:outline-none"
-                placeholder="Updated in your inbox"
+                
               />
               <button
                 class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none"
@@ -170,7 +170,7 @@ function App() {
             </div>
           </form>
           <div class="hidden text-white md:block">
-            Copyright &copy; 2022, All Rights Reserved
+            Copyright &copy; DEVSTACK ICT SOLUTIONS
           </div>
         </div>
       </div>
