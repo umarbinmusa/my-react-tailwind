@@ -7,7 +7,7 @@ function App() {
   
     <div class="flex items-center justify-between mt-6">
     <div class="pt-2">
-                <img src="./images/logo.svg" bg-black alt=""/>
+    <img src="./images/logo.svg" bg-black alt=""/>
             </div>
           
         <div class=" md:flex space-x-16 mt-2 font-bold">
@@ -163,7 +163,7 @@ function App() {
                 
               />
               <button
-                class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none"
+                class="px-6 py-2 text-white rounded-full bg-black hover:bg-white focus:outline-none"
               >
                 Go
               </button>
