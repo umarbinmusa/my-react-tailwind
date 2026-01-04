@@ -1,30 +1,55 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-
- function NavBar() {
+function NavBar() {
   return (
-    <nav class="flex items-center justify-between mt-6">
-    <div class="pt-2 ">
-    <img src="./images/back.png" alt=""/>
-            </div>
-          
-        <ul class=" md:flex space-x-16 mt-2 font-bold">
-            <li class="hover:text-green-400"><Link to="/Home">Home</Link></li>
-            <li class="hover:text-green-400"><Link to="/About">About</Link></li>
-            <li class="hover:text-green-400"><Link to="/Contact">Contact</Link></li>
-            <li class="hover:text-green-400"><Link to="/Mission">Mission</Link></li>
-            <li class="hover:text-green-400"><Link to="/Services">Services</Link></li>
-            <li class="hover:text-green-400"><Link to="/Staffs">Staffs</Link></li>
-           
-            
+    <nav className="fixed top-0 w-full bg-white shadow-sm z-50">
+      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+        
+        {/* LOGO */}
+        <Link to="/" className="flex items-center gap-2">
+          <img
+            src="./images/back.png"
+            alt="Devstack Logo"
+            className="h-10 w-auto"
+          />
+          <span className="font-extrabold text-xl tracking-wide">
+            DEVSTACK<span className="text-gray-500">ICT</span>
+          </span>
+        </Link>
+
+        {/* NAV LINKS */}
+        <ul className="hidden md:flex space-x-10 font-semibold">
+          <li className="hover:text-green-500 transition">
+            <Link to="/Home">Home</Link>
+          </li>
+          <li className="hover:text-green-500 transition">
+            <Link to="/About">About</Link>
+          </li>
+          <li className="hover:text-green-500 transition">
+            <Link to="/Services">Services</Link>
+          </li>
+          <li className="hover:text-green-500 transition">
+            <Link to="/Mission">Mission</Link>
+          </li>
+          <li className="hover:text-green-500 transition">
+            <Link to="/Staffs">Staffs</Link>
+          </li>
+          <li className="hover:text-green-500 transition">
+            <Link to="/Contact">Contact</Link>
+          </li>
         </ul>
-        
-        <a href="get started" class=" hidden md:block p-3 px-6 pt-2 text-white rounded-full baseline hover: bg-black">
-            Get Started 
-        </a>
+
+        {/* CTA BUTTON */}
+        <Link
+          to="/Contact"
+          className="hidden md:inline-block bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition"
+        >
+          Get Started
+        </Link>
+      </div>
     </nav>
-        
   );
 }
+
 export default NavBar;
